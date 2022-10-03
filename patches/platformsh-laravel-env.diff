@@ -1,0 +1,13 @@
+diff --git a/vendor/platformsh/laravel-bridge/platformsh-laravel-env.php b/vendor/platformsh/laravel-bridge/platformsh-laravel-env.php
+index 5b06f99..4db7f90 100644
+--- a/vendor/platformsh/laravel-bridge/platformsh-laravel-env.php
++++ b/vendor/platformsh/laravel-bridge/platformsh-laravel-env.php
+@@ -93,7 +93,7 @@ function mapAppUrl(Config $config) : void
+         return;
+     }
+
+-    $requestUrl = false;
++    $requestUrl = '';
+     if (isset($_SERVER['SERVER_NAME'])) {
+         $requestUrl = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? 'https://' : 'http://')
+             . $_SERVER['SERVER_NAME'];

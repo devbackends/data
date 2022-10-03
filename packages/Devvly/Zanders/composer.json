@@ -1,0 +1,20 @@
+{
+    "name": "devvly/zanders",
+    "license": "MIT",
+
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Devvly\\Zanders\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Devvly\\Zanders\\Providers\\ZandersServiceProvider"
+            ],
+            "aliases": {}
+        }
+    },
+    "minimum-stability": "stable"
+}

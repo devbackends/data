@@ -1,0 +1,1 @@
+<img src="{{ asset('images/2adata-logo-black-yellow.svg') }}" width="217px">

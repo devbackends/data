@@ -1,0 +1,26 @@
+{
+    "name": "bagisto/laravel-core",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Mohamad Kabalan",
+            "email": "moe@2acommerce.com"
+        }
+    ],
+    "require": {
+    },
+    "autoload": {
+        "psr-4": {
+            "Devvly\\Core\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Devvly\\Core\\Providers\\CoreServiceProvider"
+            ],
+            "aliases": { }
+        }
+    },
+    "minimum-stability": "dev"
+}

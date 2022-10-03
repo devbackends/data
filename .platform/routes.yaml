@@ -1,0 +1,20 @@
+# The routes of the project.
+#
+# Each route describes how an incoming URL is going
+# to be processed by Platform.sh.
+
+"https://www.2adata.com.master-7rqtwti-gv4cwukg3ypyc.us-4.platformsh.site/":
+  type: upstream
+  upstream: "app:http"
+"https://2adata.com.master-7rqtwti-gv4cwukg3ypyc.us-4.platformsh.site":
+  type: redirect
+  to: "https://www.2adata.com.master-7rqtwti-gv4cwukg3ypyc.us-4.platformsh.site/"
+"https://{default}/":
+  type: upstream
+  upstream: "app:http"
+"https://app.{default}/":
+  type: upstream
+  upstream: "app:http"
+"https://*.{default}/":
+  type: upstream
+  upstream: "app:http"
